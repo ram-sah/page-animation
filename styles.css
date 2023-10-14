@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+HTML,
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(50, 45, 45); */
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(103, 79, 79); */
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    background-position: top;
+}
+.top {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(129, 122, 122);*/
+
+}
+
+/* for larger screen max-width 1920 */
+#workingarea {
+    width: 80%;
+    max-width: 1920px;
+    /* border: 1px solid red; */
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav {
+    pointer-events: all;
+    width: 100%;
+    /* height: 50px; */
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav a:hover{
+    font-size: large;
+
+}
+#nav img {
+    height: 60px;
+    /* mix-blend-mode:multiply ; */
+}
+
+#nleft, #nright{
+display: flex;
+/* align item and text align getting confuse, far different*/
+align-items: center;
+gap: 60px;
+
+}
+#nav a{
+    color: #fff;
+    font-family: Georgia;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+}
+#hero{
+    width: 100%;
+    /* hide this hight from all three below for auto hight selection with letter */
+    /* height: 100px; */
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+#heroleft{
+    min-width: 50%;
+    /* hide this hight from all three  for auto hight selection with letter */
+    /* height: 100px; */
+
+    /* background-color: yellow; */
+}
+#heroright{
+    width: 15%;
+    /* hide this hight from all three  for auto hight selection with letter */
+    /* height: 400px; */
+    /* background-color: green; */
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+#heroright p{
+    text-align: right;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 50px;
+
+}
+#heroright p:nth-child(2){
+    color: blue;
+    margin-bottom: 100px;
+}
+#heroright .image{
+    width: 100%;
+    height: 170px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Mona_Lisa-restored.jpg/1024px-Mona_Lisa-restored.jpg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+#heroleft .elem{
+    height: 9.5vw;
+    position: relative;
+    /* background-color: rgb(0, 255, 255); */
+    overflow: hidden;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #fff;
+    font-weight: 100;
+    font-size: 10vw;
+    line-height: 0.8;
+}
+/* hide all elementh back and getting forward first */
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+#heroleft button{
+    pointer-events: all;
+cursor: pointer;
+padding: 20px 25px;
+font-size: 4vh;
+margin-top: 5vb;
+border: none;
+border-radius: 15px;
+background-color: rgb(224, 161, 161);
+}
